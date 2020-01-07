@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <center><h1 style="color:green">Log In</h1></center>
+                <form method="post" novalidate>
+                    {% csrf_token %}
+
+                    {{ form|crispy }}
+
+                    <button class="btn btn-success" type="submit">Log In</button>
+                    <a class="btn btn-link" style="color:red;" href="{% url 'password_reset' %}">Forgot Your
+                        Password?</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-6">
+        <center><p style="color:Violet; margin-top:40px;">Log with Social Media</p></center>
+        <center>
+            <a class="btn btn-link  " href="{% url 'social:begin' 'github' %}"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" width="50px" height="50px"/></a> (OR)
+            <a class="btn btn-link " href="{% url 'social:begin' 'google-oauth2' %}"><img src="https://avatars0.githubusercontent.com/u/1342004?s=400&v=4" width="50px" height="50px"/></a>
+
+        </center>
+
+
+    </div>
+</div>
+{% endblock %}
