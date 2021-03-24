@@ -157,7 +157,7 @@ requests==2.22.0
 requests-oauthlib==1.2.0
 requests-toolbelt==0.9.1
 retry-decorator==1.1.0
-rsa==4.0
+rsa==4.1
 schedule==0.6.0
 scikit-learn==0.20.0
 scipy==1.1.0
