@@ -123,7 +123,7 @@ protobuf==3.6.1
 psycopg2==2.8.3
 psycopg2-binary==2.8.3
 pudb==2019.1
-py==1.7.0
+py==1.10.0
 pyasn1==0.4.5
 pyasn1-modules==0.2.4
 PyAudio==0.2.11
