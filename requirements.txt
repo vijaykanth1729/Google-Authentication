@@ -15,7 +15,7 @@ bleach==2.1.4
 boto==2.48.0
 bs4==0.0.1
 cached-property==1.5.1
-certifi==2019.6.16
+certifi==2022.12.7
 cffi==1.11.5
 chardet==3.0.4
 Click==7.0
